@@ -23,15 +23,23 @@
     }
 
     .hero {
-      position: relative;
-      width: 100%;
-      min-height: 100vh;
+  background-image: url("vitrine.png");
+  background-size: cover;
+  background-position: center;
+}
 
-      background-image: url("vitrine.png");
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-    }
+@media (max-width: 1024px) {
+  .hero {
+    background-image: url("vitrine-tablette.png");
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url("vitrine-mobile.png");
+    background-position: center top;
+  }
+}
 
     .help-zone {
       position: absolute;
