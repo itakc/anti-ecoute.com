@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Demande envoyée - Anti-écoute</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+
+      background:
+        radial-gradient(circle at top right, rgba(0, 190, 255, 0.18), transparent 35%),
+        radial-gradient(circle at bottom left, rgba(0, 100, 255, 0.15), transparent 35%),
+        linear-gradient(135deg, #01050d 0%, #031426 50%, #010713 100%);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 24px;
+    }
+
+    .confirmation-box {
+      width: 100%;
+      max-width: 720px;
+
+      padding: 55px 40px;
+
+      text-align: center;
+
+      border-radius: 28px;
+
+      background: rgba(3, 13, 30, 0.88);
+
+      border: 1px solid rgba(0, 200, 255, 0.35);
+
+      backdrop-filter: blur(14px);
+
+      box-shadow:
+        0 0 30px rgba(0, 180, 255, 0.20),
+        0 0 80px rgba(0, 90, 255, 0.13);
+    }
+
+    .success-icon {
+      width: 95px;
+      height: 95px;
+
+      margin: 0 auto 28px;
+
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 50px;
+      font-weight: bold;
+
+      color: #ffffff;
+
+      background:
+        radial-gradient(circle, #00e5ff 0%, #0078ff 70%);
+
+      box-shadow:
+        0 0 22px rgba(0, 220, 255, 0.55),
+        0 0 55px rgba(0, 100, 255, 0.35);
+    }
+
+    h1 {
+      margin: 0 0 18px;
+
+      font-size: 38px;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0 auto 12px;
+
+      max-width: 560px;
+
+      color: #bddcf6;
+
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .small-text {
+      margin-top: 20px;
+
+      color: #7fa6c7;
+
+      font-size: 14px;
+    }
+
+    .home-btn {
+      display: inline-block;
+
+      margin-top: 32px;
+
+      padding: 15px 32px;
+
+      border-radius: 999px;
+
+      color: white;
+      text-decoration: none;
+
+      font-size: 17px;
+      font-weight: 700;
+
+      background:
+        linear-gradient(
+          90deg,
+          #0078ff,
+          #00c8ff
+        );
+
+      box-shadow:
+        0 0 18px rgba(0, 180, 255, 0.35),
+        0 0 42px rgba(0, 100, 255, 0.22);
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .home-btn:hover {
+      transform: translateY(-2px) scale(1.02);
+
+      box-shadow:
+        0 0 25px rgba(0, 220, 255, 0.55),
+        0 0 55px rgba(0, 100, 255, 0.35);
+    }
+
+    @media (max-width: 768px) {
+      .confirmation-box {
+        padding: 38px 22px;
+      }
+
+      h1 {
+        font-size: 29px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .success-icon {
+        width: 78px;
+        height: 78px;
+        font-size: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="confirmation-box">
+
+    <div class="success-icon">
+      ✓
+    </div>
+
+    <h1>Demande envoyée avec succès</h1>
+
+    <p>
+      Votre demande a bien été transmise.
+    </p>
+
+    <p>
+      Nous reviendrons vers vous rapidement afin d’étudier votre situation.
+    </p>
+
+    <p class="small-text">
+      Pour votre sécurité, ne transmettez jamais de mot de passe,
+      code PIN ou code de validation par email.
+    </p>
+
+    <a href="index.html" class="home-btn">
+      Retour à l’accueil
+    </a>
+
+  </main>
+
+</body>
+</html>
