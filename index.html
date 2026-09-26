@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Anti-écoute</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      background: #020611;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+
+      background-image: url("vitrine.png");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    .help-zone {
+      position: absolute;
+      left: 4%;
+      bottom: 7%;
+    }
+
+    .help-btn {
+      display: inline-block;
+
+      padding: 15px 30px;
+
+      color: white;
+      text-decoration: none;
+
+      font-size: 18px;
+      font-weight: 700;
+
+      border: 1px solid #18cfff;
+      border-radius: 999px;
+
+      background: rgba(0, 40, 80, 0.72);
+
+      box-shadow:
+        0 0 12px rgba(0, 183, 255, 0.55),
+        0 0 30px rgba(0, 108, 255, 0.35);
+
+      backdrop-filter: blur(8px);
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+    }
+
+    .help-btn:hover {
+      transform: translateY(-2px) scale(1.02);
+
+      background: rgba(0, 105, 180, 0.85);
+
+      box-shadow:
+        0 0 18px rgba(0, 220, 255, 0.7),
+        0 0 45px rgba(0, 105, 255, 0.5);
+    }
+
+    @media (max-width: 1024px) {
+      .hero {
+        background-position: center center;
+      }
+
+      .help-zone {
+        left: 5%;
+        bottom: 6%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 100svh;
+        background-position: center top;
+      }
+
+      .help-zone {
+        left: 5%;
+        right: 5%;
+        bottom: 4%;
+      }
+
+      .help-btn {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        padding: 14px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+
+    <div class="help-zone">
+      <a href="contact.html" class="help-btn">
+        Demander de l’aide
+      </a>
+    </div>
+
+  </section>
+
+</body>
+</html>
