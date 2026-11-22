@@ -47,10 +47,14 @@
 }
 
     .help-zone {
-      position: absolute;
-      left: 4%;
-      bottom: 7%;
-    }
+  position: absolute;
+  left: 4%;
+  bottom: 7%;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
     .help-btn {
       display: inline-block;
@@ -108,10 +112,14 @@
       }
 
       .help-zone {
-        left: 5%;
-        right: 5%;
-        bottom: 4%;
-      }
+  left: 5%;
+  right: 5%;
+  bottom: 4%;
+
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+}
 
       .help-btn {
         width: 100%;
@@ -128,10 +136,18 @@
   <section class="hero">
 
     <div class="help-zone">
-      <a href="contact.html" class="help-btn">
-        Demander de l’aide
-      </a>
-    </div>
+
+  <!-- Bouton existant : Demander de l'aide -->
+  <a href="contact.html" class="help-btn">
+    Demander de l’aide
+  </a>
+
+  <!-- Nouveau bouton : Comprendre l'anti-écoute -->
+  <a href="anti-ecoute.html" class="help-btn">
+    Comprendre l'anti-écoute
+  </a>
+
+</div>
 
   </section>
 
